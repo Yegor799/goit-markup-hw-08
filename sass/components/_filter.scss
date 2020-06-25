@@ -1,0 +1,32 @@
+.section-list.buttons {
+  // display: flex;
+  // justify-content: center;
+  margin-top: 0px;
+  // margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.section-list.buttons {
+  .item {
+    margin-right: 8px;
+  }
+}
+
+.section-list.buttons {
+  .item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.section-list.buttons {
+  @media screen and (max-width: 767px) {
+    .item:nth-last-child(-n + 2) {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+  }
+}
