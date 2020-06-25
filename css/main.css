@@ -767,6 +767,9 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    max-height: 609px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 
