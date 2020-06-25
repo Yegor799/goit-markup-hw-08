@@ -81,6 +81,17 @@
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }
+
+    @media screen and(min-width:1200px) {
+      display: block;
+      width: 270px;
+    }
+  }
+}
+
+.team-card:not(:first-child) {
+  @media screen and(min-width:1200px) {
+    margin-left: 30px;
   }
 }
 

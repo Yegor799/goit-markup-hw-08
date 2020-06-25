@@ -1,11 +1,7 @@
 .logo {
   display: inline-block;
-
-  // margin-right: 86px;
-  // margin: 16px 15px;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   color: $primary-text-color;
   font-family: $secondary-font;
@@ -13,6 +9,11 @@
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .web-logo {
@@ -29,7 +30,7 @@
   font-size: 22px;
   line-height: 1.18;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: block;
     text-align: center;
     padding-top: 60px;
@@ -37,5 +38,8 @@
     margin: 0;
 
     font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
   }
 }
