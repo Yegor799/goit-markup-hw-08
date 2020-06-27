@@ -1,19 +1,39 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  // max-width: 1600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #757575;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../images/hero.jpg);
-
   text-align: center;
+  background-color: #757575;
 
-  @media screen and(max-width:1199px) {
-    height: 400px;
+  // background-image: linear-gradient(
+  //   rgba(47, 48, 58, 0.8),
+  //   rgba(47, 48, 58, 0.8)
+  // ),
+  // url(../images/hero.jpg);
+
+  @media screen and(max-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../images/Hero-480.jpg);
+  }
+  @media screen and(min-width:481px) and(max-width:768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../images/Hero-768.jpg);
+  }
+  @media screen and(min-width:769px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../images/hero1200.jpg);
   }
 }
 
@@ -30,7 +50,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and(max-width:1199px) {
+  @media screen and(max-width:768px) {
     padding-top: 118px;
     margin-bottom: 30px;
 
